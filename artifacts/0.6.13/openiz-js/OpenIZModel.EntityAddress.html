@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: EntityAddress</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: EntityAddress</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="OpenIZModel.html">OpenIZModel</a>.</span>EntityAddress</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+
+    <h4 class="name" id="EntityAddress"><span class="type-signature"></span>new EntityAddress<span class="signature">(copyData)</span><span class="type-signature"></span></h4>
+
+    
+    <p class="summary">Entity address</p>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>copyData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.EntityAddress.html">OpenIZModel.EntityAddress</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Copy constructor (if present)</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>use</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets or sets the address use key            (see: <a href="OpenIZModel.html#.AddressUseKeys">OpenIZModel.AddressUseKeys</a> for values)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>useModel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.Concept.html">OpenIZModel.Concept</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">[Delay loaded from use],             Gets or sets the address use</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>component</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets or sets the component types
+                <h6>Properties</h6>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>AdditionalLocator</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>AddressLine</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>BuildingNumber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>BuildingNumberNumeric</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>BuildingNumberSuffix</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>CareOf</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>CensusTract</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>City</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Country</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>County</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Delimiter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>DeliveryAddressLine</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>DeliveryInstallationArea</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>DeliveryInstallationQualifier</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>DeliveryInstallationType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>DeliveryMode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>DeliveryModeIdentifier</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>PostalCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>PostBox</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Precinct</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>State</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>StreetAddressLine</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>StreetName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>StreetNameBase</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>StreetType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>UnitDesignator</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>UnitIdentifier</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>$other</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Unclassified</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>effectiveVersionSequence</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>obsoleteVersionSequence</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>modifiedOn</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">date</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>source</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sourceModel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.Entity.html">OpenIZModel.Entity</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">[Delay loaded from source],</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The internal primary key value of the entity</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>$type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets the type</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>etag</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets a tag which changes whenever the object is updated</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="openiz-model.js.html">openiz-model.js</a>, <a href="openiz-model.js.html#line2623">line 2623</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="OpenIZModel.VersionedAssociation.html">OpenIZModel.VersionedAssociation</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="OpenIZ.Act.html">Act</a></li><li><a href="OpenIZ.App.html">App</a></li><li><a href="OpenIZ.Authentication.html">Authentication</a></li><li><a href="OpenIZ.Bundle.html">Bundle</a></li><li><a href="OpenIZ.CarePlan.html">CarePlan</a></li><li><a href="OpenIZ.Concept.html">Concept</a></li><li><a href="OpenIZ.Configuration.html">Configuration</a></li><li><a href="OpenIZ.Entity.html">Entity</a></li><li><a href="OpenIZ.Ims.html">Ims</a></li><li><a href="OpenIZ.Localization.html">Localization</a></li><li><a href="OpenIZ.ManufacturedMaterial.ManufacturedMaterial.html">ManufacturedMaterial</a></li><li><a href="OpenIZ.Patient.html">Patient</a></li><li><a href="OpenIZ.Place.html">Place</a></li><li><a href="OpenIZ.Provider.html">Provider</a></li><li><a href="OpenIZ.Stock.html">Stock</a></li><li><a href="OpenIZ.UserEntity.html">UserEntity</a></li><li><a href="OpenIZ.Util.html">Util</a></li><li><a href="OpenIZModel.Act.html">Act</a></li><li><a href="OpenIZModel.ActExtension.html">ActExtension</a></li><li><a href="OpenIZModel.ActIdentifier.html">ActIdentifier</a></li><li><a href="OpenIZModel.ActNote.html">ActNote</a></li><li><a href="OpenIZModel.ActParticipation.html">ActParticipation</a></li><li><a href="OpenIZModel.ActProtocol.html">ActProtocol</a></li><li><a href="OpenIZModel.ActRelationship.html">ActRelationship</a></li><li><a href="OpenIZModel.ActTag.html">ActTag</a></li><li><a href="OpenIZModel.AddressComponent.html">AddressComponent</a></li><li><a href="OpenIZModel.ApplicationEntity.html">ApplicationEntity</a></li><li><a href="OpenIZModel.AssigningAuthority.html">AssigningAuthority</a></li><li><a href="OpenIZModel.Association.html">Association</a></li><li><a href="OpenIZModel.BaseEntityData.html">BaseEntityData</a></li><li><a href="OpenIZModel.Bundle.html">Bundle</a></li><li><a href="OpenIZModel.CodedObservation.html">CodedObservation</a></li><li><a href="OpenIZModel.CodeSystem.html">CodeSystem</a></li><li><a href="OpenIZModel.Concept.html">Concept</a></li><li><a href="OpenIZModel.ConceptClass.html">ConceptClass</a></li><li><a href="OpenIZModel.ConceptName.html">ConceptName</a></li><li><a href="OpenIZModel.ConceptReferenceTerm.html">ConceptReferenceTerm</a></li><li><a href="OpenIZModel.ConceptRelationship.html">ConceptRelationship</a></li><li><a href="OpenIZModel.ConceptRelationshipType.html">ConceptRelationshipType</a></li><li><a href="OpenIZModel.ConceptSet.html">ConceptSet</a></li><li><a href="OpenIZModel.ControlAct.html">ControlAct</a></li><li><a href="OpenIZModel.DeviceEntity.html">DeviceEntity</a></li><li><a href="OpenIZModel.Entity.html">Entity</a></li><li><a href="OpenIZModel.EntityAddress.html">EntityAddress</a></li><li><a href="OpenIZModel.EntityExtension.html">EntityExtension</a></li><li><a href="OpenIZModel.EntityIdentifier.html">EntityIdentifier</a></li><li><a href="OpenIZModel.EntityName.html">EntityName</a></li><li><a href="OpenIZModel.EntityNameComponent.html">EntityNameComponent</a></li><li><a href="OpenIZModel.EntityNote.html">EntityNote</a></li><li><a href="OpenIZModel.EntityRelationship.html">EntityRelationship</a></li><li><a href="OpenIZModel.EntityTag.html">EntityTag</a></li><li><a href="OpenIZModel.EntityTelecomAddress.html">EntityTelecomAddress</a></li><li><a href="OpenIZModel.Exception.html">Exception</a></li><li><a href="OpenIZModel.Extension.html">Extension</a></li><li><a href="OpenIZModel.ExtensionType.html">ExtensionType</a></li><li><a href="OpenIZModel.GenericComponentValues.html">GenericComponentValues</a></li><li><a href="OpenIZModel.IdentifiedData.html">IdentifiedData</a></li><li><a href="OpenIZModel.IdentifierBase.html">IdentifierBase</a></li><li><a href="OpenIZModel.IdentifierType.html">IdentifierType</a></li><li><a href="OpenIZModel.ManufacturedMaterial.html">ManufacturedMaterial</a></li><li><a href="OpenIZModel.Material.html">Material</a></li><li><a href="OpenIZModel.NonVersionedEntityData.html">NonVersionedEntityData</a></li><li><a href="OpenIZModel.Note.html">Note</a></li><li><a href="OpenIZModel.Observation.html">Observation</a></li><li><a href="OpenIZModel.Organization.html">Organization</a></li><li><a href="OpenIZModel.Patient.html">Patient</a></li><li><a href="OpenIZModel.PatientEncounter.html">PatientEncounter</a></li><li><a href="OpenIZModel.Person.html">Person</a></li><li><a href="OpenIZModel.PersonLanguageCommunication.html">PersonLanguageCommunication</a></li><li><a href="OpenIZModel.PhoneticAlgorithm.html">PhoneticAlgorithm</a></li><li><a href="OpenIZModel.Place.html">Place</a></li><li><a href="OpenIZModel.PlaceService.html">PlaceService</a></li><li><a href="OpenIZModel.Protocol.html">Protocol</a></li><li><a href="OpenIZModel.Provider.html">Provider</a></li><li><a href="OpenIZModel.QuantityObservation.html">QuantityObservation</a></li><li><a href="OpenIZModel.ReferenceTerm.html">ReferenceTerm</a></li><li><a href="OpenIZModel.ReferenceTermName.html">ReferenceTermName</a></li><li><a href="OpenIZModel.SecurityApplication.html">SecurityApplication</a></li><li><a href="OpenIZModel.SecurityDevice.html">SecurityDevice</a></li><li><a href="OpenIZModel.SecurityPolicy.html">SecurityPolicy</a></li><li><a href="OpenIZModel.SecurityPolicyInstance.html">SecurityPolicyInstance</a></li><li><a href="OpenIZModel.SecurityUser.html">SecurityUser</a></li><li><a href="OpenIZModel.SubstanceAdministration.html">SubstanceAdministration</a></li><li><a href="OpenIZModel.Tag.html">Tag</a></li><li><a href="OpenIZModel.TemplateDefinition.html">TemplateDefinition</a></li><li><a href="OpenIZModel.TextObservation.html">TextObservation</a></li><li><a href="OpenIZModel.UserEntity.html">UserEntity</a></li><li><a href="OpenIZModel.VersionedAssociation.html">VersionedAssociation</a></li><li><a href="OpenIZModel.VersionedEntityData.html">VersionedEntityData</a></li></ul><h3>Namespaces</h3><ul><li><a href="OpenIZ.html">OpenIZ</a></li><li><a href="OpenIZModel.html">OpenIZModel</a></li></ul><h3>Global</h3><ul><li><a href="global.html#OpenIZApplicationService">OpenIZApplicationService</a></li><li><a href="global.html#urlParams">urlParams</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.2</a> on Wed Oct 19 2016 01:45:18 GMT-0400 (Eastern Daylight Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

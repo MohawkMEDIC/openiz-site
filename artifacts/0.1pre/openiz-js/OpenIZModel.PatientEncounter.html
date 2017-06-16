@@ -1,0 +1,3181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: PatientEncounter</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: PatientEncounter</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="OpenIZModel.html">OpenIZModel</a>.</span>PatientEncounter</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+
+    <h4 class="name" id="PatientEncounter"><span class="type-signature"></span>new PatientEncounter<span class="signature">(copyData)</span><span class="type-signature"></span></h4>
+
+    
+    <p class="summary">Represents an encounter a patient has with the health system</p>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>copyData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.PatientEncounter.html">OpenIZModel.PatientEncounter</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Copy constructor (if present)</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>dischargeDisposition</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets or sets the key of discharge disposition</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dischargeDispositionModel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.Concept.html">OpenIZModel.Concept</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">[Delay loaded from dischargeDisposition],             Gets or sets the discharge disposition (how the patient left the encounter</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>isNegated</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">bool</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets or sets an indicator which identifies whether the object is negated</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>template</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.TemplateDefinition.html">OpenIZModel.TemplateDefinition</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets or sets the template identifier</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>actTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets or sets the creation time in XML format</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>startTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets or sets the creation time in XML format</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>stopTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets or sets the creation time in XML format</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>classConcept</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Class concept            (see: <a href="OpenIZModel.html#.ActClassKeys">OpenIZModel.ActClassKeys</a> for values)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>moodConcept</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Mood concept            (see: <a href="OpenIZModel.html#.ActMoodKeys">OpenIZModel.ActMoodKeys</a> for values)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reasonConcept</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Reason concept            (see: <a href="OpenIZModel.html#.ActReasonKeys">OpenIZModel.ActReasonKeys</a> for values)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>statusConcept</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Status concept id            (see: <a href="OpenIZModel.html#.StatusKeys">OpenIZModel.StatusKeys</a> for values)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>typeConcept</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Type concept identifier</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>classConceptModel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.Concept.html">OpenIZModel.Concept</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">[Delay loaded from classConcept],             Class concept datal load property</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>moodConceptModel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.Concept.html">OpenIZModel.Concept</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">[Delay loaded from moodConcept],             Mood concept data load property</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reasonConceptModel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.Concept.html">OpenIZModel.Concept</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">[Delay loaded from reasonConcept],             Mood concept data load property</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>statusConceptModel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.Concept.html">OpenIZModel.Concept</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">[Delay loaded from statusConcept],             Status concept id</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>typeConceptModel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.Concept.html">OpenIZModel.Concept</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">[Delay loaded from typeConcept],             Type concept identifier</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>identifier</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets the identifiers associated with this act
+                <h6>Properties</h6>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>classifier</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActIdentifier.html">OpenIZModel.ActIdentifier</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">where classifier is from <a href="OpenIZModel.IdentifierBase.html">OpenIZModel.IdentifierBase</a></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>relationship</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets a list of all associated acts for this act
+                <h6>Properties</h6>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Appends</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates that the source act appends information contained in the target act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Arrival</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Links the transortation act from another act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Departure</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Links a transporation act from another act indicating departure of the subject</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Documents</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The source act documents the target act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>EpisodeLink</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Links two instances of the same act over time (example: chronic conditions)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Evaluates</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Used to link a goal to an observation</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Fulfills</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates that the source act fulfills the target act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>HasAuthorization</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates that the target act authorizes the source act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>HasComponent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates that the target act is a component of the source act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>HasControlVariable</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Relationship from an act to one or more control variables (for example: device settings, or environment)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>HasManifestation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The assertion that a new observation may be a manifestation of another</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>HasPrecondition</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates that the target act is a pre-condition of the source act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>HasReason</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates a reasoning as to why the source act is occurring</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>HasReferenceValues</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates that the source act contains reference values from the target</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>HasSubject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates the subject of a particular act (example: clinical act is a subject of a control act)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>HasSupport</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates an existing act is suggesting evidence for a new observation.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>IsCauseOf</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates that the source act is the cause of the target act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>IsDerivedFrom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates the source act is derived from information contained in the target act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>IsExcerptOf</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates that the source act is an excerpt of the target act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>RefersTo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates that the source act refers to the target act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Replaces</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The source act replaces the target act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>StartsAfterStartOf</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates that the source act starts after the start of another act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Transforms</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Indicates that the source act transforms the target act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>$other</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActRelationship.html">OpenIZModel.ActRelationship</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Unclassified</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>policy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.SecurityPolicyInstance.html">OpenIZModel.SecurityPolicyInstance</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets or sets the policy instances</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>extension</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets a list of all extensions associated with the act
+                <h6>Properties</h6>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>classifier</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">bytea</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">where classifier is from <a href="OpenIZModel.Extension.html">OpenIZModel.Extension</a></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>note</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets a list of all notes associated with the act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tag</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets a list of all tags associated with the act
+                <h6>Properties</h6>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>classifier</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">where classifier is from <a href="OpenIZModel.Tag.html">OpenIZModel.Tag</a> key</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>participation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Participations
+                <h6>Properties</h6>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Admitter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Attender</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Authenticator</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Authororiginator</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Baby</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Beneficiary</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>CallbackContact</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>CausativeAgent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Consultant</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Consumable</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>CoverageTarget</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Custodian</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>DataEnterer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Destination</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Device</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>DirectTarget</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Discharger</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Distributor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Donor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>EntryLocation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The location where the act was entered</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Escort</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Exposure</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ExposureAgent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ExposureSource</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ExposureTarget</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>GuarantorParty</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Holder</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>IndirectTarget</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The entity not directly present in the act but which will be the focust of th act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Informant</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>InformationRecipient</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>LegalAuthenticator</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Location</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The location where the service was performed</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>NonreuseableDevice</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Origin</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Participation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Performer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>PrimaryInformationRecipient</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>PrimaryPerformer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Product</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Receiver</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>RecordTarget</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ReferredBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ReferredTo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Referrer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Remote</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ResponsibleParty</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ReusableDevice</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>SecondaryPerformer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The secondary performing person (support clinician)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Specimen</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Subject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Tracker</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Transcriber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The person who transcribed data from the original act</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>UgentNotificationContact</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Verifier</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Via</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Witness</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>$other</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.ActParticipation.html">OpenIZModel.ActParticipation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Unclassified</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>etag</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>previousVersion</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>previousVersionModel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.Act.html">OpenIZModel.Act</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">[Delay loaded from previousVersion],</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>version</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sequence</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>creationTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets or sets the creation time in XML format</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>obsoletionTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets or sets the creation time in XML format</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>createdByModel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.SecurityUser.html">OpenIZModel.SecurityUser</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">[Delay loaded from createdBy],             Gets or sets the user that created this base data</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>modifiedOn</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">date</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Get the modified on time</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>obsoletedByModel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OpenIZModel.SecurityUser.html">OpenIZModel.SecurityUser</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">[Delay loaded from obsoletedBy],             Gets or sets the user that obsoleted this base data</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>createdBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets or sets the created by identifier</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>obsoletedBy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets or sets the obsoleted by identifier</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">uuid</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The internal primary key value of the entity</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>$type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Gets the type</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="openiz-model.js.html">openiz-model.js</a>, <a href="openiz-model.js.html#line7074">line 7074</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="OpenIZModel.Act.html">OpenIZModel.Act</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="OpenIZ.Act.html">Act</a></li><li><a href="OpenIZ.App.html">App</a></li><li><a href="OpenIZ.Authentication.html">Authentication</a></li><li><a href="OpenIZ.Bundle.html">Bundle</a></li><li><a href="OpenIZ.CarePlan.html">CarePlan</a></li><li><a href="OpenIZ.Concept.html">Concept</a></li><li><a href="OpenIZ.Configuration.html">Configuration</a></li><li><a href="OpenIZ.Entity.html">Entity</a></li><li><a href="OpenIZ.Ims.html">Ims</a></li><li><a href="OpenIZ.Localization.html">Localization</a></li><li><a href="OpenIZ.ManufacturedMaterial.ManufacturedMaterial.html">ManufacturedMaterial</a></li><li><a href="OpenIZ.Patient.html">Patient</a></li><li><a href="OpenIZ.Place.html">Place</a></li><li><a href="OpenIZ.Provider.html">Provider</a></li><li><a href="OpenIZ.Stock.html">Stock</a></li><li><a href="OpenIZ.UserEntity.html">UserEntity</a></li><li><a href="OpenIZ.Util.html">Util</a></li><li><a href="OpenIZModel.Act.html">Act</a></li><li><a href="OpenIZModel.ActExtension.html">ActExtension</a></li><li><a href="OpenIZModel.ActIdentifier.html">ActIdentifier</a></li><li><a href="OpenIZModel.ActNote.html">ActNote</a></li><li><a href="OpenIZModel.ActParticipation.html">ActParticipation</a></li><li><a href="OpenIZModel.ActProtocol.html">ActProtocol</a></li><li><a href="OpenIZModel.ActRelationship.html">ActRelationship</a></li><li><a href="OpenIZModel.ActTag.html">ActTag</a></li><li><a href="OpenIZModel.AddressComponent.html">AddressComponent</a></li><li><a href="OpenIZModel.ApplicationEntity.html">ApplicationEntity</a></li><li><a href="OpenIZModel.AssigningAuthority.html">AssigningAuthority</a></li><li><a href="OpenIZModel.Association.html">Association</a></li><li><a href="OpenIZModel.BaseEntityData.html">BaseEntityData</a></li><li><a href="OpenIZModel.Bundle.html">Bundle</a></li><li><a href="OpenIZModel.CodedObservation.html">CodedObservation</a></li><li><a href="OpenIZModel.CodeSystem.html">CodeSystem</a></li><li><a href="OpenIZModel.Concept.html">Concept</a></li><li><a href="OpenIZModel.ConceptClass.html">ConceptClass</a></li><li><a href="OpenIZModel.ConceptName.html">ConceptName</a></li><li><a href="OpenIZModel.ConceptReferenceTerm.html">ConceptReferenceTerm</a></li><li><a href="OpenIZModel.ConceptRelationship.html">ConceptRelationship</a></li><li><a href="OpenIZModel.ConceptRelationshipType.html">ConceptRelationshipType</a></li><li><a href="OpenIZModel.ConceptSet.html">ConceptSet</a></li><li><a href="OpenIZModel.ControlAct.html">ControlAct</a></li><li><a href="OpenIZModel.DeviceEntity.html">DeviceEntity</a></li><li><a href="OpenIZModel.Entity.html">Entity</a></li><li><a href="OpenIZModel.EntityAddress.html">EntityAddress</a></li><li><a href="OpenIZModel.EntityExtension.html">EntityExtension</a></li><li><a href="OpenIZModel.EntityIdentifier.html">EntityIdentifier</a></li><li><a href="OpenIZModel.EntityName.html">EntityName</a></li><li><a href="OpenIZModel.EntityNameComponent.html">EntityNameComponent</a></li><li><a href="OpenIZModel.EntityNote.html">EntityNote</a></li><li><a href="OpenIZModel.EntityRelationship.html">EntityRelationship</a></li><li><a href="OpenIZModel.EntityTag.html">EntityTag</a></li><li><a href="OpenIZModel.EntityTelecomAddress.html">EntityTelecomAddress</a></li><li><a href="OpenIZModel.Exception.html">Exception</a></li><li><a href="OpenIZModel.Extension.html">Extension</a></li><li><a href="OpenIZModel.ExtensionType.html">ExtensionType</a></li><li><a href="OpenIZModel.GenericComponentValues.html">GenericComponentValues</a></li><li><a href="OpenIZModel.IdentifiedData.html">IdentifiedData</a></li><li><a href="OpenIZModel.IdentifierBase.html">IdentifierBase</a></li><li><a href="OpenIZModel.IdentifierType.html">IdentifierType</a></li><li><a href="OpenIZModel.ManufacturedMaterial.html">ManufacturedMaterial</a></li><li><a href="OpenIZModel.Material.html">Material</a></li><li><a href="OpenIZModel.NonVersionedEntityData.html">NonVersionedEntityData</a></li><li><a href="OpenIZModel.Note.html">Note</a></li><li><a href="OpenIZModel.Observation.html">Observation</a></li><li><a href="OpenIZModel.Organization.html">Organization</a></li><li><a href="OpenIZModel.Patient.html">Patient</a></li><li><a href="OpenIZModel.PatientEncounter.html">PatientEncounter</a></li><li><a href="OpenIZModel.Person.html">Person</a></li><li><a href="OpenIZModel.PersonLanguageCommunication.html">PersonLanguageCommunication</a></li><li><a href="OpenIZModel.PhoneticAlgorithm.html">PhoneticAlgorithm</a></li><li><a href="OpenIZModel.Place.html">Place</a></li><li><a href="OpenIZModel.PlaceService.html">PlaceService</a></li><li><a href="OpenIZModel.Protocol.html">Protocol</a></li><li><a href="OpenIZModel.Provider.html">Provider</a></li><li><a href="OpenIZModel.QuantityObservation.html">QuantityObservation</a></li><li><a href="OpenIZModel.ReferenceTerm.html">ReferenceTerm</a></li><li><a href="OpenIZModel.ReferenceTermName.html">ReferenceTermName</a></li><li><a href="OpenIZModel.SecurityApplication.html">SecurityApplication</a></li><li><a href="OpenIZModel.SecurityDevice.html">SecurityDevice</a></li><li><a href="OpenIZModel.SecurityPolicy.html">SecurityPolicy</a></li><li><a href="OpenIZModel.SecurityPolicyInstance.html">SecurityPolicyInstance</a></li><li><a href="OpenIZModel.SecurityUser.html">SecurityUser</a></li><li><a href="OpenIZModel.SubstanceAdministration.html">SubstanceAdministration</a></li><li><a href="OpenIZModel.Tag.html">Tag</a></li><li><a href="OpenIZModel.TemplateDefinition.html">TemplateDefinition</a></li><li><a href="OpenIZModel.TextObservation.html">TextObservation</a></li><li><a href="OpenIZModel.UserEntity.html">UserEntity</a></li><li><a href="OpenIZModel.VersionedAssociation.html">VersionedAssociation</a></li><li><a href="OpenIZModel.VersionedEntityData.html">VersionedEntityData</a></li></ul><h3>Namespaces</h3><ul><li><a href="OpenIZ.html">OpenIZ</a></li><li><a href="OpenIZModel.html">OpenIZModel</a></li></ul><h3>Global</h3><ul><li><a href="global.html#OpenIZApplicationService">OpenIZApplicationService</a></li><li><a href="global.html#urlParams">urlParams</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.2</a> on Wed Oct 19 2016 01:45:18 GMT-0400 (Eastern Daylight Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
