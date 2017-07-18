@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -15,16 +15,18 @@
     <meta name="fb:app_id" content="551838324972411"/>
     <title>Open Immunize</title>
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lobster|Quicksand" rel="stylesheet">
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-
+    <!-- slider css -->
+    <link rel="stylesheet" href="css/slider.css" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,7 +38,7 @@
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <img src="img/logo.png" style="float:left; padding:0px 4px; " />
+            <img src="img/logo.png"/>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -66,7 +68,73 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
+<!-- Slider -->
+    <div class="container slider_box">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <center><img src="img/slider/NoInternet.jpg"></center>
+                <div class="carousel-caption ">
+                    <h2>No Internet, No Problem</h2>
+                    <p>Highlight the fact that the solution can operate for days or even weeks at a time offline and synchronize its data later.</p>
+                </div>
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                <center><img src="img/slider/OneSolution.jpeg"></center>
+                <div class="carousel-caption ">
+                    <h2>Multiple Platforms, One Solution</h2>
+                    <p>Highlight that the solution can operate in a heterogenous environment which reduces the cost of equipment procurement.</p>
+                </div>
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                <center><img src="img/slider/ExtensibleData.jpeg"></center>
+                <div class="carousel-caption ">
+                    <h2>Extensible Data Model</h2>
+                    <p>Highlighting that the data model is based on an generic platform and can be extended as the countries maternal and child wellness need expand. Start with weights today, and measure height, temperature and other key indicators at a later time.</p>
+                </div>
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                <center><img src="img/slider/mobile.jpeg"></center>
+                <div class="carousel-caption ">
+                    <h2>Mobile Reporting Platform</h2>
+                    <p>Giving clinicians insight into their clinic’s performance with an extensible reporting platform.</p>
+                </div>
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                <center><img src="img/slider/OptimizedForScale.jpeg"></center>
+                <div class="carousel-caption ">
+                    <h2>Optimized For Scale</h2>
+                    <p>Highlighting that the solution can scale out across multiple servers while maintaining a reasonable data size. Maybe highlight that large clinics with more than 10,000 patients can be stored on as little as 150 MB of space on the tablet.</p>
+                </div>
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                <center><img src="img/slider/InternationalPlatform.jpg"></center>
+                <div class="carousel-caption ">
+                    <h2>International Platform</h2>
+                    <p>Showing the extensibility of the platform, that the data model, clinical protocols, business rules, and application itself can be customized while leveraging the back-end.</p>
+                </div>
+            </div>
+            <!-- End Item -->
+        </div>
+        <!-- End Carousel Inner -->
+        <ul class="nav nav-pills nav-justified slider-nav">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">No Internet, No Problem</a></li>
+            <li data-target="#myCarousel" data-slide-to="1"><a href="#">Multiple Platforms, One Solution</a></li>
+            <li data-target="#myCarousel" data-slide-to="2"><a href="#">Extensible Data Model</a></li>
+            <li data-target="#myCarousel" data-slide-to="3"><a href="#">Mobile Reporting Platform</a></li>
+            <li data-target="#myCarousel" data-slide-to="4"><a href="#">Optimized For Scale</a></li>
+            <li data-target="#myCarousel" data-slide-to="5"><a href="#">International Platform</a></li>
+        </ul>
+    </div>
+    <!-- End Carousel -->
+</div>
+<!-- End Slider -->  
     <!-- Header -->
     <header>
         <div class="container">
@@ -219,7 +287,7 @@
     </section>
     <!-- Contact Section -->
     <section id="team">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Community</h2>
@@ -230,7 +298,7 @@
                 <div class="col-md-12">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-4 center">
+                            <div class="col-md-3 center">
                                 <div class="well">
                                     <img class="img-centered img-responsive" style="width:236px; height:236px" src="./img/team/benderd.jpg" />
                                     <h3>Duane Bender</h3><br />
@@ -250,7 +318,7 @@
                                     
                                 </div>
                             </div>
-                            <div class="col-md-4 center">
+                            <div class="col-md-3 center">
                                 <div class="well">
                                     <img class="img-centered img-responsive" src="./img/team/fyfej.jpg" />
                                     <h3>Justin Fyfe</h3><br />
@@ -269,7 +337,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-md-4 center">
+                            <div class="col-md-3 center">
                                 <div class="well">
                                     <img class="img-centered img-responsive" style="" src="./img/team/dalmolinj.jpg" />
                                     <h3>Joseph Dal Molin</h3><br />
@@ -285,7 +353,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-md-4 center">
+                            <div class="col-md-3 center">
                                 <div class="well">
                                     <img class="img-centered img-responsive" style="width:236px; height:236px" src="./img/team/brownp.jpg" />
                                     <h3>Paul Brown</h3><br />
@@ -301,7 +369,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-md-4 center">
+                            <div class="col-md-3 center">
                                 <div class="well">
                                     <img class="img-centered img-responsive" style="width:236px; height:236px" src="./img/team/khannan.jpg" />
                                     <h3>Nityan Khanna</h3><br />
@@ -321,7 +389,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-md-4 center">
+                            <div class="col-md-3 center">
                                 <div class="well">
                                     <img class="img-centered img-responsive" style="width:236px; height:236px" src="./img/team/ibrahim.jpg" />
                                     <h3>Mohamed Ibrahim</h3><br />
@@ -343,7 +411,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-md-4 center">
+                            <div class="col-md-3 center">
                                 <div class="well">
                                     <img class="img-centered img-responsive" style="width:236px; height:236px" src="./img/team/tylerg.jpg" />
                                     <h3>Garrett Tyler</h3><br />
@@ -356,7 +424,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-md-4 center">
+                            <div class="col-md-3 center">
                                 <div class="well">
                                     <img class="img-centered img-responsive" style="width:236px; height:236px" src="./img/team/norgatea.jpg" />
                                     <h3>Andrew Norgate</h3><br />
@@ -644,10 +712,13 @@
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- slider js -->
+    <script src="js/slider.js"></script>
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
+
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
@@ -661,7 +732,7 @@
 
   ga('create', 'UA-72711129-1', 'auto');
   ga('send', 'pageview');
-
     </script>
+
 </body>
 </html>
